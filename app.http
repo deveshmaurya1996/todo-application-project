@@ -3,8 +3,7 @@ POST http://localhost:3001/todos/
 Content-Type: application/json
 
 {
-    "id":5,
-    "todo":"buy stuff",
+    "todo":"buy tea",
     "status":"Pending"
 }
 

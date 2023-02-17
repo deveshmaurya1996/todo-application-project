@@ -28,12 +28,12 @@ initializeDBAndServer();
 // API to add a new task
 app.post("/todos/", async (request, response) => {
   try {
-    const { id, todo, status } = request.body;
+    const { todo, status } = request.body;
     const postTodoQuery = `
       INSERT INTO
-        tasks (id, todo, status)
+        tasks ( todo, status)
       VALUES
-        (${id}, '${todo}', '${status}');`;
+        ( '${todo}', '${status}');`;
     await db.run(postTodoQuery);
     response.send("Todo Successfully Added");
   } catch (e) {
