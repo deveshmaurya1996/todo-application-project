@@ -1,0 +1,34 @@
+###
+POST http://localhost:3001/todos/
+Content-Type: application/json
+
+{
+    "id":5,
+    "todo":"buy stuff",
+    "status":"Pending"
+}
+
+###
+PUT http://localhost:3001/todos/1
+Content-Type: application/json
+
+{
+    "status": "completed"
+}
+
+###
+
+DELETE http://localhost:3001/todos/4
+
+
+###
+PUT http://localhost:3001/todos/1/update_todo
+Content-Type: application/json
+
+{
+    "todo": "Stsesfsdfsdory"
+}
+
+###
+
+GET http://localhost:3001/todos/
